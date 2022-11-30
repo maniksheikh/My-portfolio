@@ -425,12 +425,13 @@ html, body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/hero.jpg) center no-repeat;
-  height: 100%;
+  /* background: url('https://png.pngtree.com/png-clipart/20190120/ourlarge/pngtree-male-staff-jobs-the-man-programmer-png-image_500142.jpg') center no-repeat; */
+  height:100%;
   width: 100%;
   display: table;
   position: relative;
   background-size: cover;
+  background-color: #000;
 }
 
 .background-overlay:before {
@@ -445,31 +446,46 @@ html, body {
 }
 
 .hero-content {
-  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align:middle;
   position: relative;
+  display: column;
+}
+.hero-content .hero-body {
+  display: column;
 }
 
-.hero-content h1 {
+.hero-content .hero-body h1 {
   width: 100%;
   padding: 0 15px;
-  font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
+  font-size: 52px;
+  background: -webkit-linear-gradient(rgb(201, 51, 214), rgb(228, 83, 83));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
 }
-
+.hero-content .hero-body div {
+  line-height: 1;
+}
 .hero-content p {
   padding: 0 15px;
-  margin: 30px auto 0;
+  margin: 25px auto 0;
   text-align: center;
   text-transform: uppercase;
 }
 
+.hero-content .dsk-img {
+  align-items: center;
+  margin-top:1.8rem;
+  /* margin-left: 5rem; */
+  
+}
 .hero-content .hero-job {
   font-size: 18px;
+  color: white;
 }
 
 .hero-content .hero-job span {
@@ -600,6 +616,7 @@ html, body {
 .site-section {
   padding: 100px 0;
 }
+
 
 .site-section h2 {
   font-family: "Varela", sans-serif;
@@ -2203,8 +2220,14 @@ textarea.form-control {
 
 /* Section: Social Networks */
 .section-networks {
-  padding: 30px 0;
+  padding:15px 0;
   text-align: center;
+  display: flex;
+  justify-content:space-between;
+}
+
+.section-networks .footer-content {
+  margin: auto;
 }
 
 .section-networks .container {
@@ -2217,6 +2240,11 @@ textarea.form-control {
   box-shadow: none;
 }
 
+.section-networks .rectangle {
+  height: 40px;
+  width: 40px;
+}
+
 .section-networks a:hover, .section-networks a:focus {
   background-color: #ffffff;
   color: #196fc2;
@@ -2226,13 +2254,16 @@ textarea.form-control {
 ================================================== */
 .site-footer .container-fluid {
   position: relative;
-  padding: 70px 15px;
-  text-align: center;
+  /* padding: 70px 15px; */
+  /* text-align: center;
+  align-items: center;
+  justify-content: center; */
   border-bottom: 1px solid #dddddd;
 }
 
 .site-footer .container {
-  padding: 70px 15px 100px;
+  padding: 20px 10px;
+  /* margin-right: 25rem !important; */
 }
 
 .site-footer ul {
@@ -2284,6 +2315,9 @@ textarea.form-control {
 
 .site-footer .copyright {
   margin-bottom: 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: whi;
 }
 
 @media only screen and (max-width: 767px) {
