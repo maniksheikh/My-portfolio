@@ -421,6 +421,21 @@ html, body {
     margin-left: 0;
   }
 }
+h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.big-rectangle {
+  margin-top: 11rem !important;
+}
+
+.md-pic {
+   height: 300px !important;
+   border-radius: 10px;
+}
 
 /* HERO
 ================================================== */
@@ -596,9 +611,10 @@ hr {
   animation-play-state: paused;
 }
 
+/* Container-work-section */
 
 .container-work {
-  padding: 0;
+  padding:2.5rem;
   margin: 0;
   background-color: rgb(209, 205, 205) !important;
 }
@@ -1946,12 +1962,16 @@ textarea.form-control {
   color: #ffffff;
 }
 
-.site-footer .copyright {
+ .copyright {
   margin-bottom: 0;
   font-size: 1.7rem;
   font-weight: bold;
-  color: whi;
+  color: white;
 }
+
+/* .container i {
+  color: black;
+} */
 
 @media only screen and (max-width: 767px) {
   /* FOOTER*/
